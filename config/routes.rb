@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   
   resources :recipes
   
-  
+  #resources :recipes provides all the default routes that we need. Type in rake routes to see all the routes that are created via the command resources :recipes
 end
