@@ -12,7 +12,13 @@ Rails.application.routes.draw do
   #get '/recipes/:id', to: 'recipes#show', as: 'recipe'
   #delete '/recipes/:id', to: 'recipes#destroy'
   
-  resources :recipes
+  resources :recipes do
+    member do
+      post 'like'
+   end
+  end
+  
+
   
   #resources :recipes provides all the default routes that we need. Type in rake routes to see all the routes that are created via the command resources :recipes
 end
